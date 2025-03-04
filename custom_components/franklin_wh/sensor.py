@@ -54,8 +54,12 @@ def setup_platform(
     add_entities([
         FranklinBatterySensor(cache),
         HomeLoadSensor(cache),
+        HomeUseSensor(cache),
         BatteryUseSensor(cache),
+        GridExportSensor(cache),
+        GridImportSensor(cache),
         GridUseSensor(cache),
+        SolarEnergySensor(cache),
         SolarProductionSensor(cache),
         BatteryChargeSensor(cache),
         BatteryDischargeSensor(cache),
