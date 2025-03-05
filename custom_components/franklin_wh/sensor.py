@@ -222,7 +222,7 @@ class SolarEnergySensor(SensorEntity):
     _attr_name = "FranklinWH Solar Energy"
     _attr_native_unit_of_measurement = UnitOfEnergy.KILO_WATT_HOUR
     _attr_device_class = SensorDeviceClass.ENERGY
-    _attr_state_class = SensorStateClass.TOTAL
+    _attr_state_class = SensorStateClass.TOTAL_INCREASING
 
     def __init__(self, cache):
         self._cache = cache
